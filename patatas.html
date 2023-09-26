@@ -75,13 +75,13 @@ button:hover {
     const signupForm = document.getElementById("signup-form");
 
     signupForm.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent form submission for demonstration purposes
+        event.preventDefault();
 
         const username = document.getElementById("username").value;
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
 
-        // For demonstration, simply display a message
+      
         alert(`Signed up as: ${username}\nEmail: ${email}`);
     });
 });
