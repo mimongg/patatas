@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-    /* CSS for styling your website */
+ /* Default styles for larger screens */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,11 +16,13 @@ body {
     color: white;
 }
 
+/* Header styles */
 header {
     background-color: purple;
     padding: 10px 0;
 }
 
+/* Navigation styles */
 nav ul {
     list-style: none;
     padding: 0;
@@ -39,6 +41,7 @@ nav a {
     font-weight: bold;
 }
 
+/* Hero section styles */
 .hero {
     background-image: url('your-hero-image.jpg'); /* Replace with your hero image */
     background-size: cover;
@@ -67,7 +70,47 @@ nav a {
     margin-top: 20px;
 }
 
-/* Add more CSS for other sections and styling as needed */
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Adjustments for tablets and smaller screens */
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust the font size for smaller screens */
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjustments for mobile devices */
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+}
 
 </style>
 <body>
